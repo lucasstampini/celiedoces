@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cêlie Doces — Confeitaria artesanal por encomenda</title>
+<meta name="description" content="Cêlie Doces — confeitaria artesanal feita à mão, com tempo e carinho. Bolos, tortas e docinhos sob encomenda pelo WhatsApp, com entrega em Mauá e Santo André. Também no iFood e 99Food.">
+<meta name="theme-color" content="#e8a0ad">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Cêlie Doces — Confeitaria artesanal por encomenda">
+<meta property="og:description" content="Bolos, tortas e docinhos feitos à mão, sob encomenda pelo WhatsApp. Entrega em Mauá e Santo André.">
+<meta property="og:image" content="assets/bolo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Spectral:ital,wght@0,400;0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- LCP image: preload the hero photo -->
+<link rel="preload" as="image" href="assets/bolo.webp"
+      imagesrcset="assets/bolo-480.webp 480w, assets/bolo.webp 773w"
+      imagesizes="(max-width:900px) 90vw, 50vw" fetchpriority="high">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#topo" class="brand" aria-label="Cêlie Doces">
+      <span class="mark">Cêlie</span>
+      <span class="sub">Doces</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#encomendar">Como pedir</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#onde-pedir">Onde pedir</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm js-wa" data-msg="Olá, Cêlie! Vim pelo site e gostaria de fazer uma encomenda 🍰">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.9A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        Encomendar
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ====================== HERO ====================== -->
+<main id="topo">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Confeitaria artesanal &middot; por encomenda</span>
+      <h1>Doces feitos à mão, <em>com tempo e carinho</em></h1>
+      <p class="lead">Bolos, tortas e docinhos preparados sob encomenda, do jeitinho de casa. É só escolher e chamar a gente no WhatsApp.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary js-wa" data-msg="Olá, Cêlie! Vim pelo site e gostaria de fazer uma encomenda 🍰">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.9A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Fazer encomenda
+        </a>
+        <a class="btn btn-ghost" href="#cardapio">Ver o cardápio</a>
+      </div>
+      <div class="hero-meta">
+        <div class="item"><b>Mauá &amp; S. André</b><span>Entregamos na região</span></div>
+        <div class="item"><b>iFood &amp; 99Food</b><span>Também nos apps</span></div>
+        <div class="item"><b>Sob encomenda</b><span>Feito fresquinho</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="blob"></div>
+      <img class="hero-img"
+           src="assets/bolo.webp"
+           srcset="assets/bolo-480.webp 480w, assets/bolo.webp 773w"
+           sizes="(max-width:900px) 90vw, 440px"
+           width="773" height="965"
+           alt="Bolo de chocolate com morangos da Cêlie Doces"
+           fetchpriority="high" decoding="async">
+      <div class="hero-badge">
+        <span class="s">feito à</span>
+        <span class="s" style="font-size:2rem;margin-top:-6px">mão</span>
+        <span class="t">com amor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ribbon -->
+<div class="ribbon" aria-hidden="true">
+  <div class="track">
+    <span>Bolos caseiros</span><span>Docinhos gourmet</span><span>Tortas geladas</span><span>Encomendas pelo WhatsApp</span><span>Mauá &amp; Santo André</span>
+    <span>Bolos caseiros</span><span>Docinhos gourmet</span><span>Tortas geladas</span><span>Encomendas pelo WhatsApp</span><span>Mauá &amp; Santo André</span>
+  </div>
+</div>
+
+<!-- ====================== CARDÁPIO ====================== -->
+<div class="scallop on-card"></div>
+<section class="section menu" id="cardapio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nosso cardápio</span>
+      <h2>Escolha o seu docinho favorito</h2>
+      <p>Tudo preparado sob encomenda. Toque em <b>Pedir no WhatsApp</b> e a gente já confirma sabor, data e entrega com você.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="chip active" data-cat="todos">Todos</button>
+      <button class="chip" data-cat="bolos">Bolos</button>
+      <button class="chip" data-cat="tortas">Tortas</button>
+      <button class="chip" data-cat="docinhos">Docinhos</button>
+    </div>
+
+    <div class="grid" id="menuGrid">
+
+      <!-- BOLOS -->
+      <article class="product-card reveal" data-cat="bolos">
+        <div class="ph" role="img" aria-label="foto · bolo de cenoura">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · bolo de cenoura</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Bolo</span>
+          <h3 class="product-name">Bolo de Cenoura com Brigadeiro</h3>
+          <p class="product-desc">Massa fofinha de cenoura caseira coberta com uma camada generosa de brigadeiro cremoso. O clássico que todo mundo ama.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 68<small>bolo inteiro</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="bolos">
+        <div class="ph" role="img" aria-label="foto · naked cake de morango">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · naked cake de morango</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Bolo</span>
+          <h3 class="product-name">Naked Cake de Morango</h3>
+          <p class="product-desc">Camadas de pão de ló com creme de baunilha sedoso e morangos fresquinhos. Perfeito para aniversários e comemorações.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 98<small>aprox. 15 fatias</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="bolos">
+        <div class="ph" role="img" aria-label="foto · bolo de fubá">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · bolo de fubá</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Bolo</span>
+          <h3 class="product-name">Bolo de Fubá com Goiabada</h3>
+          <p class="product-desc">Receita da vovó: fubá cremoso, recheio de goiabada derretida no meio e aquela crostinha dourada de dar água na boca.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 52<small>bolo inteiro</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TORTAS -->
+      <article class="product-card reveal" data-cat="tortas">
+        <div class="ph" role="img" aria-label="foto · torta de limão">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · torta de limão</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Torta</span>
+          <h3 class="product-name">Torta de Limão Merengada</h3>
+          <p class="product-desc">Base crocante, creme de limão azedinho na medida certa e um merengue maçaricado por cima. Refrescante e irresistível.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 72<small>torta inteira</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="tortas">
+        <div class="ph" role="img" aria-label="foto · cheesecake">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · cheesecake</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Torta</span>
+          <h3 class="product-name">Cheesecake de Frutas Vermelhas</h3>
+          <p class="product-desc">Creme aveludado de cream cheese sobre base amanteigada, coberto com uma calda caseira de frutas vermelhas.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 82<small>torta inteira</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="tortas">
+        <div class="ph" role="img" aria-label="foto · banoffee">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · banoffee</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Torta</span>
+          <h3 class="product-name">Banoffee</h3>
+          <p class="product-desc">Doce de leite cremoso, banana, chantilly fresco e um toque de canela. Aquele docinho gelado que conforta a alma.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 76<small>torta inteira</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DOCINHOS -->
+      <article class="product-card reveal" data-cat="docinhos">
+        <div class="ph" role="img" aria-label="foto · brigadeiros gourmet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · brigadeiros gourmet</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Docinhos</span>
+          <h3 class="product-name">Brigadeiros Gourmet</h3>
+          <p class="product-desc">Feitos com chocolate de verdade, enroladinhos um a um. Sabores: tradicional, belga, ninho, paçoca e pistache.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 95<small>cento &middot; mín. 50 un</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="docinhos">
+        <div class="ph" role="img" aria-label="foto · caixa de trufas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · caixa de trufas</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Docinhos</span>
+          <h3 class="product-name">Caixa de Trufas Sortidas</h3>
+          <p class="product-desc">Nove trufas cremosas em sabores variados, embaladas com capricho. Um presente lindo e delicioso para quem você ama.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 39<small>caixa com 9 un</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-cat="docinhos">
+        <div class="ph" role="img" aria-label="foto · mini tortinhas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>foto · mini tortinhas</span>
+        </div>
+        <div class="pc-body">
+          <span class="tag">Docinhos</span>
+          <h3 class="product-name">Mini Tortinhas Variadas</h3>
+          <p class="product-desc">Tortinhas individuais nos sabores limão, ninho com morango e chocolate. Perfeitas para chá da tarde e festinhas.</p>
+          <div class="pc-foot">
+            <span class="product-price">R$ 54<small>caixa com 6 un</small></span>
+            <a class="btn btn-primary btn-sm js-order">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<div class="scallop on-card" style="transform:scaleY(-1)"></div>
+
+<!-- ====================== COMO ENCOMENDAR ====================== -->
+<section class="section" id="encomendar">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Como encomendar</span>
+      <h2>Pedir é pertinho de você</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num"></div>
+        <h3>Escolha</h3>
+        <p>Dê uma olhada no cardápio e separe seus favoritos — ou conte pra gente a ideia da sua festa.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num"></div>
+        <h3>Chame no WhatsApp</h3>
+        <p>Toque em pedir e a gente combina sabores, quantidade, data e a forma de entrega.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num"></div>
+        <h3>Receba fresquinho</h3>
+        <p>Preparamos tudo na encomenda e entregamos em Mauá e Santo André — ou você retira.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SOBRE ====================== -->
+<div class="scallop on-card"></div>
+<section class="section about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-art reveal">
+      <div class="stamp">
+        <span class="s">desde</span>
+        <span class="t">a cozinha de casa</span>
+      </div>
+      <div class="ph" role="img" aria-label="foto da Cêlie / da cozinha">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>foto da Cêlie / da cozinha</span>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">Quem faz</span>
+      <h2>Oi, eu sou a Cêlie!</h2>
+      <p>A Cêlie Doces nasceu na minha cozinha, do gosto de receber as pessoas com algo doce e feito com cuidado. O que começou agradando a família e os amigos virou encomenda pra toda a vizinhança.</p>
+      <p>Cada bolo e cada docinho é preparado por mim, com ingredientes de qualidade, sem pressa e com muito carinho. Aqui não tem produção em massa — tem receita de casa, do jeitinho que adoça o seu dia.</p>
+      <div class="about-sign">com carinho, Cêlie</div>
+    </div>
+  </div>
+</section>
+<div class="scallop on-card" style="transform:scaleY(-1)"></div>
+
+<!-- ====================== ONDE PEDIR ====================== -->
+<section class="section where" id="onde-pedir">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Onde pedir</span>
+      <h2>Encomende do jeito que for melhor pra você</h2>
+      <p>Encomendas especiais e bolos sob medida pelo WhatsApp. Para pronta-entrega e pedidos rápidos, também estamos no iFood e no 99Food.</p>
+    </div>
+    <div class="where-grid">
+      <div class="where-card reveal">
+        <span class="logo wa">WhatsApp</span>
+        <h3>Encomendas e bolos sob medida</h3>
+        <p>Fale direto com a Cêlie para festas, datas especiais e pedidos personalizados.</p>
+        <a class="btn btn-primary js-wa" data-msg="Olá, Cêlie! Gostaria de fazer uma encomenda 🍰">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.9A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+      <div class="where-card reveal">
+        <span class="logo ifood">iFood</span>
+        <h3>Pronta-entrega no iFood</h3>
+        <p>Bateu a vontade? Peça nossos docinhos selecionados com entrega rápida pelo app.</p>
+        <!-- TODO: substitua pela URL da sua loja no iFood -->
+        <a class="btn btn-ghost" href="https://www.ifood.com.br" target="_blank" rel="noopener">Abrir no iFood</a>
+      </div>
+      <div class="where-card reveal">
+        <span class="logo food99">99Food</span>
+        <h3>Pronta-entrega no 99Food</h3>
+        <p>Também estamos no 99Food com itens prontinhos para chegar quentinhos até você.</p>
+        <!-- TODO: substitua pela URL da sua loja no 99Food -->
+        <a class="btn btn-ghost" href="https://99app.com" target="_blank" rel="noopener">Abrir no 99Food</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FAQ ====================== -->
+<div class="scallop on-card"></div>
+<section class="section faq" id="duvidas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2>Tirando suas dúvidas</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal" open>
+        <summary>Com quanta antecedência preciso encomendar?<span class="ico">+</span></summary>
+        <div class="ans">Pedimos pelo menos <b>3 dias de antecedência</b> para encomendas em geral. Para bolos elaborados e datas especiais (Natal, Dia das Mães, Páscoa), quanto antes melhor — esses períodos enchem rápido!</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Vocês entregam? Em quais regiões?<span class="ico">+</span></summary>
+        <div class="ans">Sim! Entregamos em <b>Mauá e Santo André</b>. A taxa e o horário combinamos pelo WhatsApp de acordo com o seu bairro. Você também pode retirar o pedido com a gente.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Quais as formas de pagamento?<span class="ico">+</span></summary>
+        <div class="ans">Aceitamos <b>Pix, cartão e dinheiro</b>. Para encomendas maiores, pedimos um sinal de 50% para confirmar a reserva da data, e o restante na entrega.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Dá para pedir pelo iFood ou 99Food?<span class="ico">+</span></summary>
+        <div class="ans">Sim! Mantemos itens selecionados disponíveis nos aplicativos para <b>pronta-entrega</b>. Já as encomendas personalizadas e bolos sob medida são feitas pelo WhatsApp.</div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Fazem opções sem glúten ou sem lactose?<span class="ico">+</span></summary>
+        <div class="ans">Algumas receitas têm versão adaptada, sob consulta. Chame a gente no WhatsApp contando sua restrição que encontramos a melhor opção pra você. 💕</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CTA ====================== -->
+<div class="cta">
+  <div class="cta-inner reveal">
+    <span class="script">vamos adoçar seu dia?</span>
+    <h2>Faça sua encomenda agora</h2>
+    <p>Conte pra gente o que você imaginou. Respondemos rapidinho no WhatsApp e cuidamos de cada detalhe com você.</p>
+    <a class="btn btn-primary js-wa" data-msg="Olá, Cêlie! Vim pelo site e quero fazer uma encomenda 🍰">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.9A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      Chamar no WhatsApp
+    </a>
+  </div>
+</div>
+</main>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="mark">Cêlie Doces</div>
+        <p>Confeitaria artesanal feita à mão, com tempo e carinho. Encomendas pelo WhatsApp, com entrega em Mauá e Santo André.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#encomendar">Como pedir</a></li>
+          <li><a href="#sobre">Sobre a Cêlie</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a class="js-wa" data-msg="Olá, Cêlie! Vim pelo site 🍰" href="#">WhatsApp (11) 97210-5640</a></li>
+          <li><a href="https://www.instagram.com/celiedoces/" target="_blank" rel="noopener">Instagram @celiedoces</a></li>
+          <li><a href="https://www.ifood.com.br" target="_blank" rel="noopener">iFood</a></li>
+          <li><a href="https://99app.com" target="_blank" rel="noopener">99Food</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cêlie Doces · Feito com carinho 🩷</span>
+      <span>Mauá &amp; Santo André · SP</span>
+    </div>
+  </div>
+</footer>
+
+<!-- floating whatsapp -->
+<a class="fab js-wa" data-msg="Olá, Cêlie! Vim pelo site e gostaria de fazer uma encomenda 🍰" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-5.9A8.4 8.4 0 1 1 21 11.5z"/></svg>
+</a>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>
