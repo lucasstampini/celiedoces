@@ -28,7 +28,7 @@
       price = (priceEl.childNodes[0] && priceEl.childNodes[0].textContent || "").trim();
     }
     name = name.trim();
-    var msg = "Olá, Cêlie! Gostaria de encomendar: " + name + (price ? " (" + price + ")" : "") + " 🍰";
+    var msg = "Olá, Cêlie! Gostaria de encomendar: " + name + (price ? " (" + price + ")" : "");
     el.setAttribute("href", waLink(msg));
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener");
